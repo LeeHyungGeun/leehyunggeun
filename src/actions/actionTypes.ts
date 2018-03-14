@@ -1,0 +1,1 @@
+export const CHANGE_MENU: string = 'CHANGE_MENU';
