@@ -4,7 +4,7 @@ import * as _ from 'lodash';
 
 const Navigation = styled.nav`
     width: 100%;
-    background-color: #69db7c;
+    background-color: #94d82d;
     & .menu-container {
         display: flex;
         justify-content: flex-end;
@@ -15,7 +15,7 @@ const Navigation = styled.nav`
         margin-right: 2rem;
         & .menu-item {
             padding: 1rem;
-            border-radius: 3px;
+            border-radius: 5px;
             cursor: pointer;
             & a {
                 text-decoration: none;
@@ -24,10 +24,10 @@ const Navigation = styled.nav`
                 user-select: none;
             }
             &:hover {
-                background: #51cf66;
+                background: #82c91e;
             }
             &.active, :active {
-                background: #51cf66;
+                background: #82c91e;
             }
             & + .menu-item {
                 margin-left: 1rem;
