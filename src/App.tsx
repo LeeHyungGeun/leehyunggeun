@@ -1,11 +1,18 @@
 import * as React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import routes from './routes';
+import {
+	Provider
+} from 'react-redux';
+import configureStore from './store/configureStore';
 
 class App extends React.Component {
 	render() {
+		const store = configureStore();
 		return (
-			<BrowserRouter children={routes} />
+			<Provider store={store}>
+				<BrowserRouter children={routes} />
+			</Provider>
 		);
 	}
 }
