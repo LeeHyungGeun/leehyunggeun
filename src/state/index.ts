@@ -1,7 +1,10 @@
 import header from './header';
+import resume from './resume';
 export {
-    header
+    header,
+    resume
 };
 export default {
-    header
+    header,
+    resume
 };
