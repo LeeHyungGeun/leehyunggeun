@@ -1,10 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import * as _ from 'lodash';
+import variables from '../../styles/variables';
 
 const Navigation = styled.nav`
     width: 100%;
-    background-color: #94d82d;
+    background-color: ${variables.headerBackground};
     & .menu-container {
         display: flex;
         justify-content: flex-end;
@@ -24,10 +25,10 @@ const Navigation = styled.nav`
                 user-select: none;
             }
             &:hover {
-                background: #82c91e;
+                background: ${variables.background};
             }
             &.active, :active {
-                background: #82c91e;
+                background: ${variables.background};
             }
             & + .menu-item {
                 margin-left: 1rem;
@@ -58,11 +59,11 @@ class Header extends React.Component<Props, State> {
                                 return (
                                     <li 
                                         className={`menu-item ${_menu === menu ? 'active' : ''}`}
+                                        onClick={() => { onChangeMenu(_menu); }}
                                         key={`menu_${key}`}
                                     >
                                         <a 
                                             href="javascript:;"
-                                            onClick={() => { onChangeMenu(_menu); }}
                                         >
                                             {_menu}
                                         </a>

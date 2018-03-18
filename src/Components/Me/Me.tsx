@@ -1,12 +1,11 @@
 import * as React from 'react';
+// import styled from 'styled-components';
 import styled from 'styled-components';
+import variables from '../../styles/variables';
 
 const MeWrapper = styled.section`
-    background: #82c91e;
-    position: absolute;
-    height: 100%;
     width: 100%;
-
+    background: ${variables.background};
     & .profile {
         text-align: center;
         & .image {
@@ -47,6 +46,7 @@ class Me extends React.Component {
             <MeWrapper>
                 <div className="profile">
                     <img className="image" src="https://avatars1.githubusercontent.com/u/2471651?s=460&v=4" />
+                    {/* <img className="image" src="https://avatars1.githubusercontent.com/u/2471651?s=460&v=4" /> */}
                     <p className="description">
                         Hello, I'm Ken!
                     </p>
