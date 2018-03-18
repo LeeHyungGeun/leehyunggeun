@@ -18,7 +18,7 @@ export default (
             path="/" 
             render={(props: any) => {
                 document.body.style.background = variables.background;
-                props.menu = '/';
+                props.menu = 'Me';
                 return <Me {...props} />;
             }}
         />
@@ -27,7 +27,7 @@ export default (
             path="/Me" 
             render={(props: any) => {
                 document.body.style.background = variables.background;
-                props.menu = '/Me';
+                props.menu = 'Me';
                 return <Me {...props} />;
             }}
         />
@@ -36,7 +36,7 @@ export default (
             path="/Resume" 
             render={(props: any) => {
                 document.body.style.background = '#f9f9f9';
-                props.menu = '/Resume';
+                props.menu = 'Resume';
                 return <Resume {...props} />;
             }}
         />
