@@ -1,4 +1,4 @@
-export default {
+const header = {
     menus: [
         'Me',
         'Resume',
@@ -8,3 +8,4 @@ export default {
     ],
     menu: 'Me'
 };
+export default header;
