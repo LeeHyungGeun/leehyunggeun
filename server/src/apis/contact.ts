@@ -1,4 +1,6 @@
-import mongojs, { ObjectId } from 'mongojs';
+import mongojs, { 
+    // ObjectId 
+} from 'mongojs';
 const DB_URL = 'leehyunggeun';
 const COLLECTION_NAME = ['contact'];
 const db = mongojs(DB_URL, COLLECTION_NAME);
