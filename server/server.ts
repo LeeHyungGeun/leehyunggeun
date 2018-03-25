@@ -3,6 +3,8 @@ const app = express();
 const PORT = 9999;
 import * as bodyParser from 'body-parser';
 import contact from './apis/contact';
+import * as fs from 'fs';
+import * as path from 'path';
 
 app.use(express.static('../build'));
 app.use(bodyParser.json());
@@ -42,8 +44,10 @@ app.post(`/api/sendMessage`, async (req, res) => {
         });
     }
 });
-// app.get('/*', (req, res) => {
-//     res.send('Hello World22jladsfkljk3jk');
-// });
+app.get('*', (req, res) => {
+    fs.readFile(path.resolve(__dirname, '../build/index.html'), 'utf8', (err, data) => {
+        res.send(data);
+    });
+});
 
 app.listen(PORT);
