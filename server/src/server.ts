@@ -4,9 +4,9 @@ const PORT = 8080;
 import * as bodyParser from 'body-parser';
 import contact from './apis/contact';
 import * as fs from 'fs';
-import * as path from 'path';
+// import * as path from 'path';
 
-app.use(express.static('../build'));
+app.use(express.static('./build'));
 app.use(bodyParser.json());
 
 app.get('/api/getServices', (req, res) => {
@@ -45,7 +45,8 @@ app.post(`/api/sendMessage`, async (req, res) => {
     }
 });
 app.get('*', (req, res) => {
-    fs.readFile(path.resolve(__dirname, '../build/index.html'), 'utf8', (err, data) => {
+    const url = './build/index.html';
+    fs.readFile(url, 'utf8', (err, data) => {
         res.send(data);
     });
 });
