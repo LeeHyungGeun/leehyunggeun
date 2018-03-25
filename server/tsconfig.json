@@ -1,0 +1,43 @@
+// {
+//     "compilerOptions": {
+//         "module": "commonjs",
+//         "target": "es6",
+//         "noImplicitAny": false,
+//         "sourceMap": false
+//     },
+//     "typeRoots": ["node_modules/@types"],
+//     "exclude": [
+//         "node_modules"
+//     ]
+// }
+
+
+{
+    "compilerOptions": {
+        "outDir": "build/dist",
+        "target": "es6",
+        "lib": ["es6", "dom"],
+        "sourceMap": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "rootDir": "src",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "experimentalDecorators": true
+    },
+    "typeRoots": ["node_modules/@types"],
+    "exclude": [
+        "node_modules",
+        "build",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts"
+    ]
+}
