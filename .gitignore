@@ -46,3 +46,4 @@ yarn-error.log*
 server/DB/*
 server/node_modules/*
 server/yarn.lock*
+server/build
