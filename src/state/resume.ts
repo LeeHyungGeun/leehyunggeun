@@ -6,7 +6,7 @@ const experience: Resume = {
         {
             company: 'NAVER Corp',
             position: 'FrontEnd Developer/Team Lead',
-            date: 'Sep 2015 - current',
+            date: 'Sep 2015 - Mar 2018',
             skill: 'React, Redux, TypeScript, AngularJS, jQuery, Handlebars, Node.js, Enzyme, Mocha, Webpack',
             details: [
                 'Built the Front End for Web Service: Dashboard, Message Notification System to LINE Works customers, ECMS, and a lot of kind services.',
