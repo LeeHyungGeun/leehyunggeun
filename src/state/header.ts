@@ -3,8 +3,8 @@ const header = {
         'Me',
         'Resume',
         'Contact',
-        'Resources',
-        'Blog',
+        // 'Resources',
+        // 'Blog',
     ],
     menu: 'Me'
 };
